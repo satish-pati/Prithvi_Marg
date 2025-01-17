@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Prithvi-Marg-main.sln"
+    "dotnet.defaultSolution": "Prithvi_Marg.sln"
 }
