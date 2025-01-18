@@ -244,7 +244,6 @@ public class AnimalDrag : MonoBehaviour
     {
         initialPosition = transform.position; 
         animalCollider = GetComponent<Collider2D>(); 
-
         // Activate only the first animal at the start
         if (currentIndex == 0)
         {
@@ -319,8 +318,17 @@ public class AnimalDrag : MonoBehaviour
             ResetPosition();
             isCurrentAnimalActive = true; 
         }
+        if (animalCollider != null)
+{
+    animalCollider.enabled = true;
+}
+else
+{
+    Debug.LogWarning($"{gameObject.name} does not have a Collider2D attached.");
+}
+
        
-            animalCollider.enabled = true;
+           // animalCollider.enabled = true;
         
          isDragging = false;
     }

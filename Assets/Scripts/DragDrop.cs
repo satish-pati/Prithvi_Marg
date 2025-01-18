@@ -20,11 +20,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     private void Start()
     {
         collider = GetComponent<BoxCollider>();
-        if (collider == null)
-        {
-            Debug.LogError($"No BoxCollider found on {gameObject.name}. Please add one.");
-            return;
-        }
+       
 
        
 
