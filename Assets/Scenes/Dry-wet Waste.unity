@@ -2728,7 +2728,7 @@ MonoBehaviour:
   timerText: {fileID: 983438170}
   resultText: {fileID: 1949860840}
   winButton: {fileID: 669442153}
-  gameDuration: 30
+  gameDuration: 60
   button: {fileID: 1752787030}
 --- !u!1001 &5138790307740104154
 PrefabInstance:
@@ -3173,7 +3173,7 @@ MonoBehaviour:
   timerText: {fileID: 983438170}
   resultText: {fileID: 1949860840}
   winButton: {fileID: 669442153}
-  gameDuration: 30
+  gameDuration: 60
   button: {fileID: 1752787030}
 --- !u!1001 &6839073484998304089
 PrefabInstance:
