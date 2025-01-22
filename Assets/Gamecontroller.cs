@@ -41,7 +41,7 @@ public class GameController : MonoBehaviour
     if (!gameActive||over){ return;
          // Exit early if the game is not active
         }
-        Debug.Log("over is"+over);
+        Debug.Log("over is"+objectsInBins);
 
     // Decrease timer and ensure it doesn't go below zero
     timeRemaining = Mathf.Max(0, timeRemaining - Time.deltaTime);
@@ -71,7 +71,6 @@ else
             {
                 Debug.Log("activated");
                  SceneManager.LoadScene(1);
-
                 });
 
 }
