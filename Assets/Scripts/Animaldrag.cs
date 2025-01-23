@@ -12,19 +12,16 @@ public class AnimalDrag : MonoBehaviour
     public AnimalDrag[] allAnimals; // Array of all animal scripts
     private int currentIndex = 0; // Tracks the current active animal
     private bool s = false;
+        private HashSet<AnimalDrag> completedAnimals = new HashSet<AnimalDrag>(); // Tracks completed animals
+
    // private  completedAnimal[]; // Tracks completed animals
-       private int currentAnimalIndex = -1; // Tracks the currently active animal
-    private List<int> completedAnimals = new List<int>(); // Tracks completed animals
-
-
-           
+       
  private int k=0;
     private Collider2D animalCollider; // Reference to the object's collider
 
     void Start()
     {
-         ShuffleAnimals();
-
+        
         initialPosition = transform.position; 
         animalCollider = GetComponent<Collider2D>(); 
         // Activate only the first animal at the start
@@ -36,6 +33,7 @@ public class AnimalDrag : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+         ShuffleAnimals();
     }
      private void ShuffleAnimals()
     {
@@ -43,11 +41,13 @@ public class AnimalDrag : MonoBehaviour
         for (int i = allAnimals.Length - 1; i > 0; i--)
         {
             int randomIndex = random.Next(0, i + 1);
-            // Swap the elements
             AnimalDrag temp = allAnimals[i];
             allAnimals[i] = allAnimals[randomIndex];
             allAnimals[randomIndex] = temp;
         }
+         completedAnimals.Clear();
+currentIndex = 0; 
+
         Debug.Log("Animal order shuffled.");
     }
 
@@ -95,6 +95,7 @@ public class AnimalDrag : MonoBehaviour
            
             Debug.Log($"{gameObject.name} placed correctly in {hitCollider.name}!");
                            FindObjectOfType<GameController>()?.ObjectPlacedCorrectly();
+                            completedAnimals.Add(this);
 
             s = true;
             gameObject.SetActive(false);
@@ -161,10 +162,11 @@ else
         k++;
         while (currentIndex < allAnimals.Length)
         {
+            
             var nextAnimal = allAnimals[currentIndex];
             currentIndex++;
 
-            if (!nextAnimal.gameObject.activeSelf)
+            if (!nextAnimal.gameObject.activeSelf&&!completedAnimals.Contains(nextAnimal))
             {
                 Debug.Log($"{nextAnimal.gameObject.name} activated.");
                 nextAnimal.gameObject.SetActive(true);
@@ -190,7 +192,15 @@ else
     }
 
     void Update()
-    {   
+    {   foreach (var animal in completedAnimals)
+{
+    if (animal != null && animal.gameObject.activeSelf)
+    {
+        Debug.Log($"Deactivating completed animal: {animal.gameObject.name}");
+        animal.gameObject.SetActive(false);
+          ActivateNextAnimal();
+    }
+}
        
         GameObject deer = GameObject.Find("Deer_001"); // Make sure "Deer" matches the name of your deer GameObject
         if (deer != null)
@@ -207,13 +217,13 @@ else
                 foreach (GameObject dee in deerObjects)
                 {
                     dee.SetActive(false); 
-                    ActivateNextAnimal();
+                    //ActivateNextAnimal();
                 }
             }
         }
     }
-}
-*/using UnityEngine;
+}*/
+using UnityEngine;
 
 public class AnimalDrag : MonoBehaviour
 {
