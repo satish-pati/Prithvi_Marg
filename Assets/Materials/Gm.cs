@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.SceneManagement; // For reloading scenes
 using UnityEngine.UI; // For UI elements
@@ -22,7 +23,7 @@ public class Gm : MonoBehaviour
     private void Start()
     {
         // Find all objects with the tags "Dry" and "Wet"
-        totalObjects = 23;
+        totalObjects = 21;
         objectsInBins = 0;
         timeRemaining = gameDuration;
         // Ensure the WinCanvas is hidden
@@ -81,7 +82,7 @@ else
     {
         if (timerText != null)
     {
-        timerText.text = $"Time: {timeRemaining:F1}s";
+        timerText.text = $" {timeRemaining:F1}s";
     }
     else
     {
