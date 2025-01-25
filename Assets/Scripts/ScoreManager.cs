@@ -1,23 +1,33 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
-using System;
 
 public class ScoreManager : MonoBehaviour
 {
-    public static ScoreManager instance;
-    public int score = 0;
-    public TMP_Text scoreText;
+    public Text scoreText;
+    private int totalPuzzlePieces = 16;
+    private int placedPieces = 0;
 
-    void Awake()
+    void Start()
     {
-        if (instance == null)
-            instance = this;
+        
+        UpdateScoreDisplay();
     }
 
-    public void AddScore(int amount)
+    public void OnPuzzlePiecePlaced()
     {
-        score += amount;
-        scoreText.text = "Score: " + score;
+        placedPieces = placedPieces + 1;
+        // Debug logging
+        Debug.Log($"Piece Placed: {placedPieces}/{totalPuzzlePieces}");
+        UpdateScoreDisplay();
+    }
+
+
+    private void UpdateScoreDisplay()
+    {
+        if (scoreText != null)
+        {
+            int score = placedPieces * 5;
+            scoreText.text = $"SCORE : {score} / 160";
+        }
     }
 }
