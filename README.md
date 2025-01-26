@@ -100,6 +100,44 @@ The mirror maze is a core part of the gameplay, offering a unique challenge for 
   - More challenging paths and complex maze reflections.
   - Designed for players seeking a more immersive and difficult experience.
 
+## Contributing
+
+We believe in the power of collaboration, and EcoMirror Maze wouldn't be what it is today without the incredible efforts of our dedicated team. Here’s a shout-out to the brilliant minds behind the project:
+
+### Special Thanks to Our Contributors:
+
+- **Tejas**:
+  - Developed **Food Chains**, **Food Web**, and **Animal Chase** mini-games.
+  - Connected all mini-games to the mirror maze, ensuring seamless integration.
+  - Worked on both the backend and frontend of the game.
+  - Provided guidance to team members, clearing doubts and assisting with mini-game executions.
+
+- **Satish**:
+  - Designed and developed **Dry and Wet Waste Sort** and the **Endangered Species** mini-game.
+  - Led the integration of the entire project.
+  - Resolved merge conflicts on GitHub and ensured smooth team collaboration.
+
+- **Binnu**:
+  - Created the **Hard Level Mirror Maze** and **Renewable Jump** mini-game.
+  - Contributed to the **README** file.
+  - Developed pop-up scenes, serving as the interface between the maze and mini-games.
+
+- **Saranya**:
+  - Developed the **EcoWords** and **Marine Clean Up** mini-games from UI to backend.
+  - Focused on making these mini-games engaging and educational.
+
+- **Rishi**:
+  - Worked on the **Small Easy Level Mirror Maze** and **Paths of Impact** mini-game.
+  - Ensured accessibility and fun for players of all skill levels.
+
+- **Rohan**:
+  - Created the fast-paced **Trash Blaster** mini-game.
+  - Focused on the gameplay mechanics and integrating eco-friendly themes.
+
+- **Ganesh**:
+  - Developed the **Jigsaw Puzzle** mini-game from UI to backend.
+  - Helped with the pop-up scenes for smooth transitions between mini-games and the maze.
+
 ## Installation
 
 To run the game locally, follow these steps:
