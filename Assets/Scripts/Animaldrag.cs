@@ -235,9 +235,17 @@ public class AnimalDrag : MonoBehaviour
     private bool s = false;
     private int k = 0;
     private Collider2D animalCollider; // Reference to the object's collider
+    public AudioClip dropSound;
+    public AudioClip crct;
+    public AudioClip piano;
+
+
+    private AudioSource audioSource;
+        private AudioSource audioSource1;
 
     void Start()
     {
+
         initialPosition = transform.position;
         animalCollider = GetComponent<Collider2D>();
         // Activate only the first animal at the start
@@ -249,6 +257,48 @@ public class AnimalDrag : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+        
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+         audioSource1 = gameObject.AddComponent<AudioSource>();
+        audioSource1.playOnAwake = false;
+               PlaySoundpiano();
+
+        
+    }
+    private void PlaySound(AudioClip clip)
+    {
+        if (clip != null && audioSource != null)
+        {
+            audioSource.clip = clip;
+            audioSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("Drop sound or AudioSource is not set.");
+        }
+    }
+     public void PlayCorrectSound()
+    {
+         if (crct != null)
+    {
+        audioSource.PlayOneShot(crct); // Play the correct sound without stopping other sounds
+    }
+    else
+    {
+        Debug.LogWarning("Correct sound not assigned!");
+    }
+    }
+     public void PlaySoundpiano()
+    {
+         if (crct != null)
+    {
+        audioSource1.PlayOneShot(piano); // Play the correct sound without stopping other sounds
+    }
+    else
+    {
+        Debug.LogWarning("Correct sound not assigned!");
+    }
     }
 
     void OnMouseDown()
@@ -290,11 +340,15 @@ public class AnimalDrag : MonoBehaviour
 
         // Check if the animal is dropped on a valid ecosystem
         Collider2D hitCollider = GetColliderUnderMouse2D();
+         
         if (hitCollider != null && hitCollider.CompareTag(GetEcosystemTagForAnimal()))
         {
+            //PlayCorrectSound();
 
             Debug.Log($"{gameObject.name} placed correctly in {hitCollider.name}!");
+
             FindObjectOfType<GameController>()?.ObjectPlacedCorrectly();
+
 
             s = true;
             gameObject.SetActive(false);
@@ -308,9 +362,10 @@ public class AnimalDrag : MonoBehaviour
         {
             // Return to the initial position if not dropped on the correct ecosystem
             Debug.Log($"{gameObject.name} not placed correctly. Returning to initial position.");
-            if (hitCollider != null)
-                Debug.Log($"Hit object: {hitCollider.name}");
 
+            PlaySound(dropSound);
+            if (hitCollider != null)
+            Debug.Log($"Hit object: {hitCollider.name}");
             ResetPosition();
             isCurrentAnimalActive = true;
         }
@@ -357,7 +412,7 @@ public class AnimalDrag : MonoBehaviour
     }
 
     private void ActivateNextAnimal()
-    {
+    {             
         k++;
         while (currentIndex < allAnimals.Length)
         {
@@ -391,7 +446,6 @@ public class AnimalDrag : MonoBehaviour
 
     void Update()
     {
-
         GameObject deer = GameObject.Find("Deer_001"); // Make sure "Deer" matches the name of your deer GameObject
         if (deer != null)
         {
