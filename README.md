@@ -103,9 +103,9 @@ The mirror maze is a core part of the gameplay, offering a unique challenge for 
 
 ## Contributing
 
-We believe in the power of collaboration, and EcoMirror Maze wouldn't be what it is today without the incredible efforts of our dedicated team. Here’s a shout-out to the brilliant minds behind the project:
+We believe in the power of collaboration, and EcoMirror Maze wouldn't be what it is today without the incredible efforts of our dedicated team. :
 
-### Special Thanks to Our Contributors:
+### Our Contributors:
 
 - **Tejas**:
   - Developed **Food Chains**, **Food Web**, and **Animal Chase** mini-games.
@@ -117,6 +117,7 @@ We believe in the power of collaboration, and EcoMirror Maze wouldn't be what it
   - Designed and developed **Dry and Wet Waste Sort** and the **Endangered Species** mini-game.
   - Led the integration of the entire project.
   - Resolved merge conflicts on GitHub and ensured smooth team collaboration.
+  - Helped team members with doubts and solving errors in GitHub.
 
 - **Binnu**:
   - Created the **Hard Level Mirror Maze** and **Renewable Jump** mini-game.
