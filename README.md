@@ -65,11 +65,12 @@ After starting the game, players can choose between **Easy** and **Medium** diff
 
 ### 8. **Dry Waste and Wet Waste Sort**
    - **Objective**: Sort items into dry and wet waste bins in under a minute.
+   - **Time limit**: 60 seconds.
    - **Challenge**: Successfully categorize all items to continue to the maze.
 
 ### 9. **Animal Linking to Respective Habitats**
    - **Objective**: Match animals with their respective habitats.
-   - **Time Limit**: Complete the task within the given time.
+   - **Time Limit**: 60 seconds.
    - **Challenge**: Correctly link animals to their habitats to move forward.
 
 ### 10. **Food Chain**
@@ -79,7 +80,7 @@ After starting the game, players can choose between **Easy** and **Medium** diff
 
 ### 11. **Food Web**
    - **Objective**: Create a food web by connecting multiple organisms based on their relationships.
-   - **Time Limit**: Complete the task within the given time.
+   - **Time Limit**: 60 seconds.
    - **Challenge**: Correctly link all organisms to form a proper food web.
 
 ## Mirror Maze
@@ -127,7 +128,7 @@ We believe in the power of collaboration, and EcoMirror Maze wouldn't be what it
   - Focused on making these mini-games engaging and educational.
 
 - **Rishi**:
-  - Worked on the **Small Easy Level Mirror Maze** and **Paths of Impact** mini-game.
+  - Worked on the **Easy Level Mirror Maze** and **Paths of Impact** mini-game.
   - Ensured accessibility and fun for players of all skill levels.
 
 - **Rohan**:
