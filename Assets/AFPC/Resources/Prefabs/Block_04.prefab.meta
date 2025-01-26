@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 221d2934039b946deaa1f1b298a6212a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 167675
+  packageName: Advanced First-Person Controller
+  packageVersion: 1.0
+  assetPath: Assets/AFPC/Resources/Prefabs/Block_04.prefab
+  uploadId: 483528

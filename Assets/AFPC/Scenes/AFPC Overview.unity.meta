@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9475068ea321d473ca9c7f0de73eb2b0
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 167675
+  packageName: Advanced First-Person Controller
+  packageVersion: 1.0
+  assetPath: Assets/AFPC/Scenes/AFPC Overview.unity
+  uploadId: 483528
