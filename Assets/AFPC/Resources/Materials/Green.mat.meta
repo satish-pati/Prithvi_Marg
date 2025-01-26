@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a4cbb2c0d0a85479997948e09bc91a6e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 167675
+  packageName: Advanced First-Person Controller
+  packageVersion: 1.0
+  assetPath: Assets/AFPC/Resources/Materials/Green.mat
+  uploadId: 483528

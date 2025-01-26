@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: efa2c318ddd3b4856bf8625a236dc1d9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 167675
+  packageName: Advanced First-Person Controller
+  packageVersion: 1.0
+  assetPath: Assets/AFPC/Resources/Materials/Gray.mat
+  uploadId: 483528
