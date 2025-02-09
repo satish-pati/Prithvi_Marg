@@ -68,7 +68,6 @@ After starting the game, players can choose between **Easy** and **Medium** diff
    - **Challenge**: Successfully categorize all items to continue to the maze.
 
 ### 9. **Animal Linking to Respective Habitats**
-![IMG-20250126-WA0023](https://github.com/user-attachments/assets/243818c9-f6db-477a-b9a8-f7363f4a7ec4)
    - **Objective**: Match animals with their respective habitats.
    - **Time Limit**: 60 seconds.
    - **Challenge**: Correctly link animals to their habitats to move forward.
