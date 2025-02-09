@@ -141,10 +141,4 @@ We believe in the power of collaboration, and EcoMirror Maze wouldn't be what it
   - Developed the **Jigsaw Puzzle** mini-game from UI to backend.
   - Helped with the pop-up scenes for smooth transitions between mini-games and the maze.
 
-## Installation
 
-To run the game locally, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/ecomirror-maze.git
