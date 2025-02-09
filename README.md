@@ -9,9 +9,8 @@
 - [Mini Games](#mini-games)
 - [Mirror Maze](#mirror-maze)
 - [Difficulty Levels](#difficulty-levels)
-- [Installation](#installation)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## About the Game
 EcoMirror Maze takes players through a visually stunning mirror maze that distorts their sense of direction with countless reflections. Along the way, they will encounter teleportation spots that lead to mini-games focused on ecological challenges. Solve these games to continue progressing through the maze, learning valuable lessons about sustainability and environmental care.
